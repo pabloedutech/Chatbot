@@ -1,0 +1,83 @@
+##
+## List of files to be ignored by Git
+##
+## Copyright: (c) 2018-2019 Versátil Tecnologia da Informação LTDA
+## See: http://help.github.com/ignore-files/ for more information.
+##
+
+## Assets
+**/assets/config.json
+**/assets/private.key
+
+## Config
+**/config
+!**/core/config
+!**/assets/config
+
+## Compiled output
+.angular
+.serverless
+bazel-out
+dist
+out-tsc
+tmp
+
+## Dependencies
+node_modules
+package-lock.json
+npm-debug.log
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+yarn-error.log
+.pnpm-debug.log
+
+## Environment
+.env
+.env.*
+
+## IDEs and Editors
+*.launch
+*.sublime-workspace
+/.idea
+.c9/
+.classpath
+.history/*
+.project
+.settings/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+## Profiling
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+## Miscellaneous
+.cypress
+.sass-cache
+*.override.yml
+/connect.lock
+/libpeerconnection.log
+caddy.*
+coverage
+junit.xml
+lerna-debug.log
+node.exe
+nodevars.bat
+npm
+npm.*
+npx
+npx.*
+testem.log
+typings
+.requests.http
+
+## System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+ID,Usuário,ChatBot,session,Data e Hora
+1,dialog 1,"Desculpe, mas não compreendi.",projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T14:40:34.000Z
+2,dialog atualizado,"Desculpe, mas não compreendi.",projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T14:41:00.000Z
+3,web 1,"Desculpe, mas não compreendi.",projects/chatbot1-382400/agent/sessions/webdemo-5d0e30ba-a546-0ebd-cd62-704674dd3827,2023-05-04T14:43:41.000Z
+4,web 2,"Lamento, mas não compreendi.",projects/chatbot1-382400/agent/sessions/webdemo-5d0e30ba-a546-0ebd-cd62-704674dd3827,2023-05-04T14:43:45.000Z
+5,web atualizada 1,"Não consegui compreender, desculpe.",projects/chatbot1-382400/agent/sessions/webdemo-d7f9d03a-b0c3-22f1-ae73-0eaf990192dc,2023-05-04T14:44:01.000Z
+6,web atualizada 2,"Não consegui compreender, desculpe.",projects/chatbot1-382400/agent/sessions/webdemo-d7f9d03a-b0c3-22f1-ae73-0eaf990192dc,2023-05-04T14:44:06.000Z
+7,devops 1,"Não consegui compreender, desculpe.",projects/chatbot1-382400/agent/sessions/webdemo-a4221775-32dc-6d1a-bc1f-dd6146fe5b73,2023-05-04T14:45:46.000Z
+8,devops 2,"Lamento, mas não compreendi.",projects/chatbot1-382400/agent/sessions/webdemo-a4221775-32dc-6d1a-bc1f-dd6146fe5b73,2023-05-04T14:45:51.000Z
+9,devops atualizada 1,"Não consegui compreender, desculpe.",projects/chatbot1-382400/agent/sessions/webdemo-ef597218-8a4c-62e9-4edc-c9665d9a4771,2023-05-04T14:46:00.000Z
+10,devops atualizada 2,"Desculpe, mas não compreendi.",projects/chatbot1-382400/agent/sessions/webdemo-ef597218-8a4c-62e9-4edc-c9665d9a4771,2023-05-04T14:46:20.000Z
+11,teste timestamp,"Não consegui compreender, desculpe.",projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:14:27.000Z
+12,tempo -5,Olá!,projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:15:17.000Z
+13,tempo -00,Olá!,projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:16:15.000Z
+14,oi fernando,Oi!,projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:39:36.000Z
+15,oi movel,oi movel iniciado,projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:41:29.000Z
+16,OI MoVEl,oi movel iniciado,projects/chatbot1-382400/agent/sessions/b752182b-5d7a-d911-96e6-bc899a02e118,2023-05-04T17:41:54.000Z
+17,escreverv um textaõa pra ver o que aconte e ver como fica ba tagbeça do planetscale e vir escrevendo pra ver o que daá,"Infelizmente, não captei o que deseja.",projects/chatbot1-382400/agent/sessions/webdemo-473e2540-8108-815b-2de6-3a8082ad4dda,2023-05-04T18:02:50.000Z

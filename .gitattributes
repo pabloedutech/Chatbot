@@ -1,0 +1,9 @@
+##
+## Git attributes
+##
+## Copyright: (c) 2018-2019 Versátil Tecnologia da Informação LTDA
+## See: https://git-scm.com/docs/gitattributes for more information.
+##
+
+## Force LF on text files
+* text=auto eol=lf
