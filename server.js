@@ -123,7 +123,7 @@ app.listen(PORT, () => {
 // const app = express();
 
 // // Conecta ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Conectado ao PlanetScale!')
 
 // // Configura time zone
@@ -271,7 +271,7 @@ app.listen(PORT, () => {
 // const app = express();
 
 // // Conecta ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Conectado ao PlanetScale!')
 
 // // Configura time zone
@@ -399,7 +399,7 @@ app.listen(PORT, () => {
 // const app = express();
 
 // // Conecta ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Conectado ao PlanetScale!')
 
 // // Configura time zone
@@ -505,7 +505,7 @@ app.listen(PORT, () => {
 // const fs = require('fs');
 
 // // Conectar ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Conectado ao PlanetScale!')
 
 // // Consulta SQL para selecionar dados da tabela logschatbot
@@ -556,7 +556,7 @@ app.listen(PORT, () => {
 // const app = express();
 
 // // Conectar ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Conectado ao PlanetScale!')
 
 // // Criar tabela de logs-chatbot
@@ -616,7 +616,7 @@ app.listen(PORT, () => {
 // const app = express();
 
 // // Conectar ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Connected to PlanetScale!')
 
 // // Criar tabela de logs-chatbot
@@ -727,7 +727,7 @@ app.listen(PORT, () => {
 // //   ***código adicional***
 // // Conectar ao banco de dados Planetscale
 
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+// const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
 // console.log('Connected to PlanetScale!')
 
 // connection.connect((err) => {
@@ -800,11 +800,11 @@ app.listen(PORT, () => {
 
     
     // console.log(req.client)
-})
+// })
 
 
-const PORT = 3000
+// const PORT = 3000
 
-app.listen(PORT, () => {
-    console.log('server up!')
-})
+// app.listen(PORT, () => {
+//     console.log('server up!')
+// })
