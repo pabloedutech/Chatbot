@@ -81,3 +81,6 @@ typings
 ## System Files
 .DS_Store
 Thumbs.db
+
+## Usuário e senha BD
+Config-BD.txt

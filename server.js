@@ -2,108 +2,108 @@
 
 // req.body.queryResult.parameters.nome
 
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const mysql = require('mysql2');
-// const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const express = require('express');
+const bodyParser = require('body-parser');
+const mysql = require('mysql2');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
-// const app = express();
+const app = express();
 
-// // Conecta ao banco de dados Planetscale
-// const connection = mysql.createConnection('mysql://49s8hzk93xu2kh46ljiv:pscale_pw_V9PeH0p0b1WM6sdGiroMftQNy6ipmqWjyFcoTNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
-// console.log('Conectado ao PlanetScale!')
+// Conecta ao banco de dados Planetscale
+const connection = mysql.createConnection('mysql://(...)):(...)TNWLfa3@aws.connect.psdb.cloud/pablo-versatil?ssl={"rejectUnauthorized":true}')
+console.log('Conectado ao PlanetScale!')
 
-// // Configura time zone
-// connection.query('SET time_zone = "-03:00";', (err, result) => {
-//   if (err) throw err;
-//   console.log('Fuso horário de São Paulo configurado com sucesso!');
-// });
+// Configura time zone
+connection.query('SET time_zone = "-03:00";', (err, result) => {
+  if (err) throw err;
+  console.log('Fuso horário de São Paulo configurado com sucesso!');
+});
 
-// // Cria tabela de logs-chatbot
-// connection.query(`
-//   CREATE TABLE IF NOT EXISTS logschatbot (
-//     id INT AUTO_INCREMENT PRIMARY KEY,
-//     user VARCHAR(255),
-//     chatBot VARCHAR(255),
-//     session TEXT,
-//     timestamp TIMESTAMP
-//   );
-// `, (err, result) => {
-//   if (err) throw err;
-//   console.log('Tabela logschatbot criada com sucesso!');
-// });
+// Cria tabela de logs-chatbot
+connection.query(`
+  CREATE TABLE IF NOT EXISTS logschatbot (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(255),
+    chatBot VARCHAR(255),
+    session TEXT,
+    timestamp TIMESTAMP
+  );
+`, (err, result) => {
+  if (err) throw err;
+  console.log('Tabela logschatbot criada com sucesso!');
+});
 
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-// app.post('/', async (req, res) => {
-//   const { queryResult } = req.body;
-//   const now = new Date();
-// //   console.log(req.body.session)
-
-
-//   // pegar todo o payload
-//   const data = {
-//     user: queryResult.queryText,
-//     chatBot: queryResult.fulfillmentText,
-//     session: req.body.session,
-//     timestamp: now,
-//     // console.log(req.body)  // corpo da requisição
-//   };
+app.post('/', async (req, res) => {
+  const { queryResult } = req.body;
+  const now = new Date();
+//   console.log(req.body.session)
 
 
-//   // Inseri dados na tabela logschatbot
-//   connection.query(`
-//     INSERT INTO logschatbot (user, chatBot, session, timestamp)
-//     VALUES ('${data.user}', '${data.chatBot}', '${data.session}', NOW());
+  // pegar todo o payload
+  const data = {
+    user: queryResult.queryText,
+    chatBot: queryResult.fulfillmentText,
+    session: req.body.session,
+    timestamp: now,
+    // console.log(req.body)  // corpo da requisição
+  };
+
+
+  // Inseri dados na tabela logschatbot
+  connection.query(`
+    INSERT INTO logschatbot (user, chatBot, session, timestamp)
+    VALUES ('${data.user}', '${data.chatBot}', '${data.session}', NOW());
     
-//   `, (err, result) => {
-//     if (err) throw err;
-//     console.log('Dados inseridos na tabela logschatbot com sucesso!');
-//   });
-// });
+  `, (err, result) => {
+    if (err) throw err;
+    console.log('Dados inseridos na tabela logschatbot com sucesso!');
+  });
+});
 
-// // cód adicionado
+// cód adicionado
 
-// // Consulta SQL para selecionar dados da tabela logschatbot
-// const sql = 'SELECT * FROM logschatbot';
+// Consulta SQL para selecionar dados da tabela logschatbot
+const sql = 'SELECT * FROM logschatbot';
 
-// // Executa consulta SQL
-// connection.query(sql, (err, results) => {
-//   if (err) throw err;
+// Executa consulta SQL
+connection.query(sql, (err, results) => {
+  if (err) throw err;
 
-//   // Escreve dados em um arquivo CSV
-//   const csvWriter = createCsvWriter({
-//     path: './logs/logschatbot.csv',
-//     header: [
-//       { id: 'id', title: 'ID' },
-//       { id: 'user', title: 'Usuário' },
-//       { id: 'chatBot', title: 'ChatBot' },
-//       { id: 'session', title: 'session' },
-//       { id: 'timestamp', title: 'Data e Hora' },
-//     ]
-//   }); 
+  // Escreve dados em um arquivo CSV
+  const csvWriter = createCsvWriter({
+    path: './logs/logschatbot.csv',
+    header: [
+      { id: 'id', title: 'ID' },
+      { id: 'user', title: 'Usuário' },
+      { id: 'chatBot', title: 'ChatBot' },
+      { id: 'session', title: 'session' },
+      { id: 'timestamp', title: 'Data e Hora' },
+    ]
+  }); 
 
-//   const records = results.map(result => ({
-//     id: result.id,
-//     user: result.user,
-//     chatBot: result.chatBot,
-//     session: result.session,
-//     timestamp: result.timestamp.toISOString()
-//   }));
+  const records = results.map(result => ({
+    id: result.id,
+    user: result.user,
+    chatBot: result.chatBot,
+    session: result.session,
+    timestamp: result.timestamp.toISOString()
+  }));
 
-//   csvWriter.writeRecords(records)
-//     .then(() => console.log('Arquivo CSV criado com sucesso!'))
-//     .catch(err => console.error(err));
-// });
+  csvWriter.writeRecords(records)
+    .then(() => console.log('Arquivo CSV criado com sucesso!'))
+    .catch(err => console.error(err));
+});
 
-// // fim cód adicionado
+// fim cód adicionado
 
-// const PORT = 3000;
+const PORT = 3000;
 
-// app.listen(PORT, () => {
-//   console.log('Servidor rodando na porta:', PORT);
-// });
+app.listen(PORT, () => {
+  console.log('Servidor rodando na porta:', PORT);
+});
 
 
 
@@ -772,21 +772,21 @@
 
 // SCRIPT ORIGINAL, MOSTRA NO CONSOLE OS LOGS RECEBIDOS DO DIALOGFLOW
 
-const express = require('express')
-const bodyParser = require('body-parser')
+// const express = require('express')
+// const bodyParser = require('body-parser')
 
-const app = express()
+// const app = express()
 
-app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(bodyParser.json())
+// app.use(bodyParser.json())
 
-app.post('/', (req, res) => {
-    // // \x1b...\x1b deixa fundo VERMELHO
-    console.log(`\x1b[32mUsuário:\x1b[0m \x1b[41m${req.body.queryResult.parameters.nome}\x1b[0m`)
-    console.log(`\x1b[33mPergunta:\x1b[0m ${req.body.queryResult.queryText}`)  
-    console.log(`\x1b[33mresposta:\x1b[0m ${req.body.queryResult.fulfillmentText}`)
-    console.log(`\x1b[32mSession:\x1b[0m ${req.body.session}`)
+// app.post('/', (req, res) => {
+//     // // \x1b...\x1b deixa fundo VERMELHO
+//     console.log(`\x1b[32mUsuário:\x1b[0m \x1b[41m${req.body.queryResult.parameters.nome}\x1b[0m`)
+//     console.log(`\x1b[33mPergunta:\x1b[0m ${req.body.queryResult.queryText}`)  
+//     console.log(`\x1b[33mresposta:\x1b[0m ${req.body.queryResult.fulfillmentText}`)
+//     console.log(`\x1b[32mSession:\x1b[0m ${req.body.session}`)
     
 
     
