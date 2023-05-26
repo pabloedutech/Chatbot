@@ -1,10 +1,12 @@
 # Logs do ChatBot
 
-Este é um projeto desenvolvido pela Versátil com o objetivo de armazenar logs de conversas entre um ChatBot e os usuários, salvando esses logs em uma tabela no banco de dados SQL do PlanetScale e gerando um arquivo CSV com esses dados.
+Este é um projeto desenvolvido com o objetivo de armazenar logs de conversas entre um ChatBot e os usuários, salvando esses logs em uma tabela no banco de dados SQL do PlanetScale e gerando um arquivo CSV com esses dados.
 
 ## Requisitos
 - Node.js
 - MySQL
+- Dialogflow
+- Ngrok
 
 ## Bibliotecas requeridas
 - mysql
